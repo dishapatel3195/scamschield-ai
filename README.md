@@ -12,11 +12,11 @@ A multi-input scam detection system that analyzes:
 
 ## Project Structure
 scamshield-ai/
-├── client/ 
-├── server/ 
-├── ai-service/ 
-├── .gitignore
-└── README.md
+  └── client/ 
+  └── server/ 
+  └── ai-service/ 
+  └── .gitignore
+  └── README.md
 
 ## Tech Stack
 
@@ -45,21 +45,21 @@ scamshield-ai/
 ### Installation
 
 1. **Clone repository**
-   git clone https://github.com/your-username/scamshield-ai.git
-   cd scamshield-ai
+   - git clone https://github.com/your-username/scamshield-ai.git
+   - cd scamshield-ai
 2. **Frontend Setup**
-   cd client
-   npm install
-   npm start
+   - cd client
+   - npm install
+   - npm start
 3. **Backend Setup**
-   cd ../server
-   npm install
-   npm run dev
+   - cd ../server
+   - npm install
+   - npm run dev
 4. **AI Service Setup**
-   cd ../ai-service
-   python -m venv venv
-   source venv/bin/activate
-   pip install -r requirements.txt
-   uvicorn main:app --reload
+   - cd ../ai-service
+   - python -m venv venv
+   - source venv/bin/activate
+   - pip install -r requirements.txt
+   - uvicorn main:app --reload
 5. **Development**
-   npm run dev  
+   - npm run dev  

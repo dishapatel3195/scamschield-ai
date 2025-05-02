@@ -13,10 +13,15 @@ A multi-input scam detection system that analyzes:
 ## Project Structure
 scamshield-ai/
   └── client/ 
+
   └── server/ 
+
   └── ai-service/ 
+
   └── .gitignore
+
   └── README.md
+  
 
 ## Tech Stack
 

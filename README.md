@@ -1,30 +1,94 @@
-SCAM SHIELD AI Personal Project
+# ScamShield AI
 
-Workspace Structure:
-    scamshield-ai/
-    ├── client/          
-    ├── server/          
-    ├── ai-service/      
-    ├── .gitignore
-    └── README.md
+<div align="center">
+  <img src="assets/logo.png" alt="ScamShield Logo" width="400">
+</div>
+
+A multi-input scam detection system that analyzes:
+- Phone call transcripts
+- Website content/URLs
+- Email/offer letters
+- Text messages
+
+## Project Structure
+scamshield-ai/
+├── client/ # React + TypeScript frontend
+├── server/ # Node.js + TypeScript backend
+├── ai-service/ # Python AI processing
+├── .gitignore
+└── README.md
 
 
-client: React + TypeScript frontend
-server: Node.js + TypeScript backend
-ai-service: Python AI processing 
+## Tech Stack
 
-Setup: 
-1. git init
-2. build project structure
-3. setup frontend in client
-    a. build frontend react: npx create-react-app . --template typescript
-    b. add dependencies: npm install @chakra-ui/react @emotion/react @emotion/styled framer-motion axios react-icons
-    c. add react development extensions: ESLint, Prettier, and Reactjs code snippets
-4. setup backend in server
-    a. add dependencies: npm install express typescript ts-node @types/express @types/node cors axios
-    b. add more depencies: npm install --save-dev nodemon eslint prettier
-    c. initialize typescirpt: npx tsc --init
-5. setup python ai service
-    a. add python: python -m venv venv
-    b. activate virtual enviornment: source venv/bin/activate
-    c. install python packages: pip install fastapi uvicorn python-multipart openai langchain beautifulsoup4 pdfminer.sixc
+### Frontend
+- React with TypeScript
+- Chakra UI
+- Axios for API calls
+
+### Backend
+- Node.js with Express
+- TypeScript
+- REST API architecture
+
+### AI Service
+- Python with FastAPI
+- OpenAI/LangChain integration
+- Web scraping capabilities
+
+## Setup Guide
+
+### Prerequisites
+- Node.js (v18+)
+- Python (3.9+)
+- Git
+
+### Installation
+
+1. **Clone repository**
+   ```bash
+   git clone https://github.com/your-username/scamshield-ai.git
+   cd scamshield-ai
+Frontend Setup
+bash
+cd client
+npm install
+npm start
+Backend Setup
+bash
+cd ../server
+npm install
+npm run dev
+AI Service Setup
+bash
+cd ../ai-service
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+Development
+
+Running Locally
+
+bash
+# From project root
+npm run dev  # Requires 'concurrently' installed globally
+Environment Variables
+
+Create .env files in each directory with required credentials.
+
+Features
+
+Real-time scam detection
+Multiple input formats support
+Detailed risk analysis
+Historical scan records
+Future Roadmap
+
+Browser extension
+Mobile app integration
+Community reporting system
+Advanced ML models
+Contributing
+
+Pull requests are welcome. For major changes, please open an issue first.

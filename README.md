@@ -12,16 +12,17 @@ A multi-input scam detection system that analyzes:
 
 ## Project Structure
 scamshield-ai/
-  └── client/ 
 
-  └── server/ 
+    └── client/ 
+    
+    └── server/ 
 
-  └── ai-service/ 
+    └── ai-service/ 
 
-  └── .gitignore
+    └── .gitignore
 
-  └── README.md
-  
+    └── README.md
+
 
 ## Tech Stack
 

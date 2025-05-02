@@ -1,0 +1,37 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Frontend",
+        "type": "chrome",
+        "request": "launch",
+        "url": "http://localhost:3000",
+        "webRoot": "${workspaceFolder}/client"
+      },
+      {
+        "name": "Backend",
+        "type": "node",
+        "request": "launch",
+        "runtimeExecutable": "nodemon",
+        "program": "${workspaceFolder}/server/src/index.ts",
+        "restart": true,
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen"
+      },
+      {
+        "name": "AI Service",
+        "type": "python",
+        "request": "launch",
+        "module": "uvicorn",
+        "args": ["ai-service.main:app", "--reload"],
+        "python": "${workspaceFolder}/ai-service/venv/bin/python",
+        "cwd": "${workspaceFolder}/ai-service"
+      }
+    ],
+    "compounds": [
+      {
+        "name": "Full Stack",
+        "configurations": ["Backend", "Frontend", "AI Service"]
+      }
+    ]
+  }
